@@ -649,6 +649,85 @@
     animation: fadeUp 0.6s ease both;
     animation-delay: 0.4s;
   }
+
+
+  @media (max-width: 768px) {
+    .header {
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: 18px;
+      padding: 24px 20px;
+    }
+
+    .header-top {
+      margin-bottom: 8px;
+    }
+
+    .header-right {
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      width: 100%;
+    }
+
+    .header-title {
+      font-size: 32px;
+      line-height: 1.1;
+    }
+
+    .main {
+      padding: 24px 20px 32px;
+      gap: 16px;
+    }
+
+    .footer {
+      padding: 16px 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .kpi-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .middle-row,
+    .bottom-row {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .chart-card,
+    .campanha-card,
+    .eficiencia-card,
+    .rec-card {
+      padding: 18px;
+    }
+
+    .bar-row {
+      grid-template-columns: minmax(100px, 120px) minmax(0, 1fr) auto;
+      gap: 8px;
+    }
+
+    .bar-name,
+    .bar-val {
+      font-size: 11px;
+    }
+
+    .donut-wrap {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      gap: 16px;
+    }
+
+    .donut-center,
+    .donut-svg {
+      width: 140px;
+      height: 140px;
+    }
+  }
 </style>
 </head>
 <body>
